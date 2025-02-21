@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-    @RestController
+
+   @CrossOrigin(origins = "*")
+   @RestController
     @RequestMapping("/bfhl")
     public class ApiController {
 

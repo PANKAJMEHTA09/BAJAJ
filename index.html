@@ -3,39 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BFHL API Client</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BFHL Challenge</title>
 </head>
 <body>
-
-    <h1>BFHL API Client</h1>
-
-    <!-- JSON Input -->
-    <textarea id="jsonInput" rows="5" placeholder='Enter JSON (e.g. { "data": ["A", "B", "1", "2"] })'></textarea>
-    
-    <!-- Submit Button -->
+    <h2>Enter JSON Input</h2>
+    <textarea id="jsonInput" rows="5" cols="50"></textarea><br>
     <button onclick="submitData()">Submit</button>
+    <p id="errorMessage" style="color: red;"></p>
 
-    <!-- Error Message -->
-    <p id="errorMessage" class="error"></p>
-
-    <!-- Multi-Select Dropdown (Hidden Initially) -->
-    <select id="filterOptions" multiple style="display: none;">
-        <option value="alphabets">Alphabets</option>
-        <option value="numbers">Numbers</option>
-        <option value="highest_alphabet">Highest Alphabet</option>
-    </select>
-
-    <!-- Filter Button (Hidden Initially) -->
-    <button id="filterButton" onclick="filterResponse()" style="display: none;">Apply Filter</button>
-
-    <!-- Response Display -->
-    <div id="responseBox" class="response-box" style="display: none;">
+    <div id="responseBox" style="display: none;">
         <h3>Response:</h3>
         <pre id="responseData"></pre>
+
+        <h3>Filter Response:</h3>
+        <select id="filterOptions" multiple style="display: none;">
+            <option value="alphabets">Alphabets</option>
+            <option value="numbers">Numbers</option>
+            <option value="highest_alphabet">Highest Alphabet</option>
+        </select>
+        <button id="filterButton" onclick="filterResponse()" style="display: none;">Filter</button>
     </div>
 
-    <script src="script.js"></script>
-
+    <script src="script.js"></script>  <!-- Correctly linked JS file -->
 </body>
 </html>
