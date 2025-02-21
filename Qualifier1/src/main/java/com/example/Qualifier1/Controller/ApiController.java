@@ -1,4 +1,4 @@
-package com.example.Qualifier1.ApiController;
+package com.example.Qualifier1.Controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
