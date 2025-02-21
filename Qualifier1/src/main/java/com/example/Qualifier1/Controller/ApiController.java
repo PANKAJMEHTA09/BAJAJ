@@ -10,6 +10,8 @@ import java.util.*;
     public class ApiController {
 
         @GetMapping
+
+
         public ResponseEntity<Map<String, Integer>> getOperationCode() {
             Map<String, Integer> response = new HashMap<>();
             response.put("operation_code", 1);
