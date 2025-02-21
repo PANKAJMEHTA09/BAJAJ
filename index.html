@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFHL API Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>BFHL API Client</h1>
+
+    <!-- JSON Input -->
+    <textarea id="jsonInput" rows="5" placeholder='Enter JSON (e.g. { "data": ["A", "B", "1", "2"] })'></textarea>
+    
+    <!-- Submit Button -->
+    <button onclick="submitData()">Submit</button>
+
+    <!-- Error Message -->
+    <p id="errorMessage" class="error"></p>
+
+    <!-- Multi-Select Dropdown (Hidden Initially) -->
+    <select id="filterOptions" multiple style="display: none;">
+        <option value="alphabets">Alphabets</option>
+        <option value="numbers">Numbers</option>
+        <option value="highest_alphabet">Highest Alphabet</option>
+    </select>
+
+    <!-- Filter Button (Hidden Initially) -->
+    <button id="filterButton" onclick="filterResponse()" style="display: none;">Apply Filter</button>
+
+    <!-- Response Display -->
+    <div id="responseBox" class="response-box" style="display: none;">
+        <h3>Response:</h3>
+        <pre id="responseData"></pre>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
